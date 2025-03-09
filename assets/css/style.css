@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;   
+}
+
+header{
+    width: 100%;
+    background-color: lightskyblue;
+}
+
+.nav-container{
+    background-color: #00a2c6;
+    display: flex;
+    flex: auto;
+    padding: 0.5%;
+    gap: 2%;
+    align-items: center;
+    font-size: 0.8rem; 
+}
+
+nav a{
+    color: white;
+    padding: 1%;
+}
+
+nav a:hover{
+    background-color: #2d3e50;
+    border-radius: 10%;
+    transition:0.3s all;
+}
+
+@media screen and (min-width:600px){
+    .nav-container{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width:992px){
+    .nav-container{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    main{
+        display: flex;
+        flex: auto;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding: 5%;
+        gap: 5%;
+    }
+}
+
+.main-content{
+    display: flex;
+    flex: auto;
+    width: 100%;
+    align-items: center;
+    padding: 5%;
+    gap: 5%;
+}
+
+.profile{
+    width: 50%;
+    border-radius: 5%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.content{
+    font-size: 0.75rem;
+}
+
+@media screen and (min-width:600px){
+    .content{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width:992px){
+    .content{
+        font-size: 1.2rem;
+    }
+}
+
+.content p{
+    text-align: justify;
+}
+
+.jumbotron{
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.card{
+    background-color: azure;
+    padding: 2%;
+    box-shadow: 19px 14px 47px 7px rgba(0,0,0,0.27);
+    width: 70%;
+    margin-bottom: 3%;
+    margin-right: 2%;
+}
+
+.card img{
+   width: 100%;
+}
+
+main{
+    padding-left: 1%;
+}
+
+.card-container{
+    display: flex;
+    flex: auto;
+}
+
+.active{
+    background-color: #2d3e50;
+    border-radius: 10px;
+}
+
+.btn{
+    background-color: #0dcaf0;
+    padding: 2%;
+    border-radius: 10px;
+    color: white;
+}
+
+.btn:hover{
+    background-color: #2d3e50;
+    transition: 0.5s all;
+}
+
+footer{
+    width: 100%;
+    background-color: lightskyblue;
+    padding: 2%;
+}
