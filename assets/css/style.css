@@ -131,9 +131,9 @@ main{
 
 .btn{
     background-color: #0dcaf0;
-    padding: 2%;
-    border-radius: 10px;
     color: white;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .btn:hover{
@@ -146,3 +146,46 @@ footer{
     background-color: lightskyblue;
     padding: 2%;
 }
+
+@media screen and (max-width:600px){
+    .card{
+        width: 100%;
+    }
+
+    .card-container{
+        display: grid;
+    }
+    .btn{
+        background-color: #0dcaf0;
+        color: white;
+        padding: 5px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (min-width:600px){
+    .card{
+        width: 100%;
+    }
+
+    .card-container{
+        display: grid;
+    }
+    .btn{
+        background-color: #0dcaf0;
+        color: white;
+        padding: 7px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (min-width:992px){
+    .card{
+        width: 70%;
+    }
+
+    .card-container{
+        display: flex;
+    }
+}
+
