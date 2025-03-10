@@ -32,30 +32,6 @@ nav a:hover{
     transition:0.3s all;
 }
 
-@media screen and (min-width:600px){
-    .nav-container{
-        font-size: 1rem;
-    }
-}
-
-@media screen and (min-width:992px){
-    .nav-container{
-        font-size: 1.1rem;
-    }
-}
-
-@media screen and (max-width:600px) {
-    main{
-        display: flex;
-        flex: auto;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        padding: 5%;
-        gap: 5%;
-    }
-}
-
 .main-content{
     display: flex;
     flex: auto;
@@ -76,18 +52,6 @@ a{
 
 .content{
     font-size: 0.75rem;
-}
-
-@media screen and (min-width:600px){
-    .content{
-        font-size: 0.9rem;
-    }
-}
-
-@media screen and (min-width:992px){
-    .content{
-        font-size: 1.2rem;
-    }
 }
 
 .content p{
@@ -111,6 +75,19 @@ a{
     margin-right: 2%;
 }
 
+.card-details{
+    background-color: azure;
+    padding: 2%;
+    box-shadow: 19px 14px 47px 7px rgba(0,0,0,0.27);
+    width: 70%;
+    margin-bottom: 3%;
+    margin-right: 2%;
+}
+
+.card-details img{
+    width: 100%;
+}
+
 .card img{
    width: 100%;
 }
@@ -121,7 +98,6 @@ main{
 
 .card-container{
     display: flex;
-    flex: auto;
 }
 
 .active{
@@ -147,8 +123,34 @@ footer{
     padding: 2%;
 }
 
+.footer-content{
+    display: flex;
+    flex: auto;
+    gap: 2%;
+}
+
+.footer-section{
+    width: 50%;
+}
+
+.social-links{
+    display: flex;
+    flex: auto;
+    gap: 20px;
+}
+
+.footer-section a {
+    color: black;
+    font-size: 1.5em;
+}
+
+
 @media screen and (max-width:600px){
     .card{
+        width: 100%;
+    }
+
+    .card-details{
         width: 100%;
     }
 
@@ -161,15 +163,34 @@ footer{
         padding: 5px;
         border-radius: 10px;
     }
+    .footer-content{
+        font-size: 0.9em;
+    }
+    main{
+        display: flex;
+        flex: auto;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding: 5%;
+        gap: 5%;
+    }
 }
 
 @media screen and (min-width:600px){
+    .nav-container{
+        font-size: 1rem;
+    }
     .card{
+        width: 48%;
+    }
+    .card-details{
         width: 100%;
     }
 
     .card-container{
-        display: grid;
+        display: flex;
+        flex-wrap: wrap;
     }
     .btn{
         background-color: #0dcaf0;
@@ -177,15 +198,24 @@ footer{
         padding: 7px;
         border-radius: 10px;
     }
+    .content{
+        font-size: 0.9rem;
+    }
 }
 
 @media screen and (min-width:992px){
     .card{
-        width: 70%;
+        width: 100%;
     }
 
     .card-container{
         display: flex;
+        flex-wrap: nowrap;
+    }
+    .nav-container{
+        font-size: 1.2rem;
+    }
+    .content{
+        font-size: 1.2rem;
     }
 }
-
